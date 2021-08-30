@@ -1,0 +1,31 @@
+{
+  "name": "Hightlightme",
+  "version": "1.0",
+  "description": "Use this app for highlighting, bolding, or underlining words on a page.",
+  "manifest_version": 2,
+  "icons": {
+    "16": "images/icon_16.png",
+    "32": "images/icon_32.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png"
+    },
+    "default_title": "Click to Use",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["jquery-3.3.1.js","editPage.js","highlight.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
