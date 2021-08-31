@@ -1,3 +1,6 @@
+Video of project in action:
+https://www.youtube.com/watch?v=gLHQbY6y5zA
+
 Thank you for your interest in Highlightme!
 
 In order to use this project, please read the following directions.
